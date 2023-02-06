@@ -41,7 +41,7 @@ const corsOptions = {
 };
 app.options("*" , cors(corsOptions));
 app.use(cors(corsOptions));
-app.use('/', indexRouter);
+
 app.use('/users', usersRouter);
 app.use(errorMiddleware);
 // catch 404 and forward to error handler
@@ -57,14 +57,15 @@ cloudinary.config({
 })
 
 //twilio requirements
-
-if (process.env.NODE_ENV === "production") {
+if(process.env.NODE_ENV==="production"){
   const path = require("path");
-  app.use(express.static(path.join(__dirname, "client/build")));
+  app.use(express.static(path.join(__dirname,"client/build")));
   app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
-  })
+  res.sendFile(path.join(__dirname,'client','build','index.html'))
+})
 }
+
+
 
 // error handler
 app.use(function(err, req, res, next) {
