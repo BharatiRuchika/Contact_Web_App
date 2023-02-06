@@ -1,0 +1,323 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header{
+  background-color:  white; ;
+  height:6rem;
+  display: flex;
+justify-content: center;
+align-items: center;
+border-bottom: solid 1px black;
+}
+#footer{
+  background-color:  #063463;
+  height:100%;
+  border: 1px solid white;
+  color: white;
+  padding: 1.3rem;
+}
+/*  */
+#main{
+  height: 80vh;
+  background-color: rgb(255, 189, 8);
+}
+
+#emailContainer input{
+  padding: 0.6rem;
+  width: 100%;
+  font-size: 70%;
+}
+
+#landingContent h3{
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  padding: 4rem;  
+  /* font-size: 0.5rem; */
+}
+@media (max-width: 1024px) and (min-width: 820px){
+  #landingContent h3{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding: 4rem;  
+    font-size: 0.5rem;
+  }
+    #emailContainer input{
+      padding: 0.6rem;
+      width: 100%;
+      font-size: 50%;
+  }
+}
+
+@media (max-width: 912px) and (min-width: 768px){
+  #emailContainer input{
+    padding: 0.6rem;
+    width: 100%;
+    font-size: 35%;
+}
+}
+
+@media (max-width: 374px) and (min-width: 360px){
+  #landingContent h3{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 540px) and (min-width: 376px){
+  #landingContent h3{
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 376px) and (min-width: 280px){
+  #landingContent h3{
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+}
+
+
+
+#logos div div{
+  border:1px solid ;
+  margin-right: 1.5rem;
+  padding: 1.5rem;
+  
+  display: inline-block;
+  height:2rem;
+  width: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color:  #05274b;
+}
+
+#logos img{
+   width:1.5rem;
+   height: 1.5rem;
+   
+}
+
+#connect{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#main img{
+  width:20rem;
+  height:20rem;
+}
+
+.imgContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 540px) and (min-width: 280px){
+#support,#furrion{
+  padding: 1rem;
+}
+}
+.authBtn{
+  background-color: #063463;
+  border:none;
+  padding: 0.6rem;
+  width:10rem;
+  font-weight: bold;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-weight: 700;
+}
+
+.wrapper form {
+  padding: 2.5rem 3rem;
+  margin: 1rem;
+}
+
+.wrapper form .btn {
+  background-color: #fa9c23;
+  border-color: #fa9c23;
+  color: white;
+  margin-top: 2.5rem;
+}
+
+.wrapper form a {
+  font-size: 0.9rem;
+  color: grey;
+}
+.avatar {
+  display: inline-block;
+   margin-bottom: 0; 
+  
+}
+
+.avatar img {
+  /* width: 100%;
+  height: 100%; */
+  height: 2.2rem;
+  width: 2.2rem;
+  /* object-fit: cover; */
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+  
+}
+#contacts{
+  margin: auto;
+}
+
+#contacts h6{
+  padding: 2rem;
+}
+
+#contactDetails{
+   height:70vh; 
+  /* width:70vh;  */
+  border:1px solid black;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+}
+#contactDetails img{
+  height:7rem;
+  width:7rem;
+}
+#imgHeader{
+  /* margin: auto; */
+display: flex;
+justify-content: center;
+align-items: center;
+/* margin-left: 12rem; */
+/* borders: 1px solid black; */
+} 
+#verifyHeader{
+  display: flex;
+  justify-content: center;
+align-items: center;
+margin-top: 2rem;
+}
+#contactDetails div{
+  display: flex;
+  justify-content: center;
+align-items: center;
+padding: 0.2rem
+}
+#contactNo{
+  border-bottom: 1px solid black;
+}
+#otpBtn{
+  border: none;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 12rem;
+  color: white;
+}
+#messageScreen{
+  margin:auto;
+  /* height:100vh; */
+  /* border: 1px solid black; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ 
+ 
+
+}
+#mainSection{
+  height: 100%;
+  border: 1px solid black;
+  padding:5rem; 
+}
+#messageScreen h3{
+ margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#messageText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+#messageText div{
+  padding: 1rem;
+  width:50rem;
+  text-align: center;
+  border: 1px solid black;
+}
+#buttonsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+#buttonsDiv button{
+  padding: 1rem;
+  width:10rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-weight: bold;
+}
+#backButton{
+  background-color: black;
+}
+#sendButton{
+  background-color: green;
+}
+#messageTable{
+  margin: auto;
+ margin-top: 2rem;
+ margin-bottom: 10rem;
+}
+#messageTable h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
