@@ -81,7 +81,7 @@ userSchema.methods.comparePassword = async function (enteredPassword) {
     console.log("thispassword",this.password);
     console.log("enteredPassword",enteredPassword);
     console.log(await bcrypt.compareSync(enteredPassword,this.password));
-    return await bcrypt.compare(enteredPassword, this.password);
+    return await bcrypt.compareSync(enteredPassword, this.password);
 }
 
 module.exports = mongoose.model("User", userSchema, "User");

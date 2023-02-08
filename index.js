@@ -10,7 +10,8 @@ var cloudinary = require("cloudinary");
 
 const fileUpload = require('express-fileupload')
 const cors = require('cors');
-require('dotenv').config({ path: './config/config.env' })
+if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config({ path: './config/config.env' })
+
 var app = express();
 app.use(cors());
 const connectDatabase = require("./config/database");
